@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="SourceCSS.css" />
+</head>
+
+<body>
+    <article id="spinners-html">
+    </article>
+
+    <script>document.getElementById("spinners-html").innerText = `
+        <div class="spinner" title="Welcome... Spinner 1">
+                <div class="welcoming">
+                    <div class="letters">
+                        <span id="W">W</span>
+                        <span id="E">E</span>
+                        <span id="L">L</span>
+                        <span id="C">C</span>
+                        <span id="O">O</span>
+                        <span id="M">M</span>
+                        <span id="E2">E</span>
+                    </div>
+                </div>
+        
+            </div>
+        
+            <div class="spinner">
+                <div class="circle" title="Loading... Spinner 2">
+                    <span class="material-symbols-outlined">
+                        autorenew
+                    </span>
+                </div>
+            </div>
+            
+            <div class="spinner">
+                <div id="interactive">
+                </div>
+                <div id="under" title="Loading... Spinner 3. Click to attempt to get on the green.">Loading...</div>
+        
+            </div>'
+            `;</script>
+
+    <button class="fab" id="backButton">
+        <span class="material-icons" style="font-size: 2em;" onclick="history.go(-1)">back</span>
+</body>
+
+</html>

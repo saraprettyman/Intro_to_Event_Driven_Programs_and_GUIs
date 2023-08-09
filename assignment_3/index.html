@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="title">Sara Prettyman</h1>
+    <span class="contact"><a href="tel:2408080498">(240-808-0498)</a> ~ <a
+            href="mailto:saradprettym@gmail.com">saradprettym@gmail.com</a>
+        ~ <a href="url">https://www.linkedin.com/in/sara-prettyman/</a></span>
+    <main>
+        <span>
+            <h2 class="section-title">EDUCATION</h2>
+            <section class="education">
+                <div style="background-color: rgb(145,14,16)" class="education-card-hover">
+                    <h5>Dynard Elementary School</h5>
+                    <div class="hidden-info">
+                        <h5 style="color: rgb(145,14,16); margin: auto;">
+                            Awards: Perfect Attendance
+                            Award, 2nd and 3rd grade
+                        </h5>
+                    </div>
+                </div>
+                <div style="background-color: rgb(128,0,0)" class="education-card-hover">
+                    <h5>Chopticon High School</h5>
+                    <div class="hidden-info">
+                        <h5 style="color: rgb(128,0,0); margin: auto;">
+                            Awards: Hilbert Prize in
+                            Mathematics
+                        </h5>
+                    </div>
+                </div>
+                <div style="background-color: rgba(27, 114, 190, 0.793)" class="education-card-hover">
+                    <h5>Utah State University</h5>
+                    <div class="hidden-info">
+                        <h5 style="color: rgba(27, 114, 190, 0.793); margin: auto; ">
+                            Awards: Neville C. and Annie P.
+                            Hunsaker Mathematics Scholarship
+                        </h5>
+                    </div>
+                </div>
+            </section>
+            <h2 class="section-title" style="margin-bottom: 5px;">EXPERIENCE</h2>
+            <section class="experience">
+                <div class="job-info">Merrill-Cazier Library</div>
+                <button class="job-button"
+                    onclick="printJob('print1',
+                    'Circulation Student Worker',
+                    'August 2020 - Present',
+                    'Assist undergraduate and graduate students one-to-one to locate needed research resources; Provide master’s students help in thesis and dissertation binding and processing.')">Details</button>
+                <div id="print1"></div>
+
+                <div class="job-info">The Statesman</div>
+                <button class="job-button" onclick="printJob('print2', 
+                    'Senior Opinion Columnist/News Reporter',
+                    'September 2021 - November 2022',
+                    'Wrote topical weekly articles')">Details</button>
+                <div id="print2"></div>
+
+                <div class="job-info">Tyler Technologies</div>
+                <button class="job-button"
+                    onclick="printJob('print3',
+                     'Revnue Accounting Intern',
+                     'May 2022 - August 2022', 'Adhered to ASC 606 Revenue Recognition standards when analyzing contracts and utilized MS Excel to organize raw company data')">Details</button>
+                <div id="print3"></div>
+
+                <div class="job-info">AmeriCorps</div>
+                <button class="job-button"
+                    onclick="printJob('print4',
+                    'Summer STEM Mentor Led',
+                    'May 2021 - July 2021', 
+                    'Completed over 300 hours of service: from teaching engineering and logic to adolescents, to mentoring them daily on personal life development topics.')">Details</button>
+                <div id="print4"></div>
+
+                <div class="job-info">USU College of Science</div>
+                <button class="job-button" onclick="printJob('print5',
+                    'Ambassador',
+                    'August 2022 - Present',
+                    'Recruit future students at both local and statewide events')">Details</button>
+                <div id="print5"></div>
+
+                <div class="job-info">Lucid Software</div>
+                <button class="job-button" onclick="printJob('print6',
+                    'QA Intern',
+                    'May 2023 - Present',
+                    'Employ Postman to conduct REST API testing, ensuring the seamless integration of both frontend and backend systems.')">Details</button>
+                <div id="print6"></div>
+
+                <script>
+                    function printJob(location, title, date, description) {
+                        if (document.getElementById(location).innerHTML == "") {
+                            document.getElementById(location).innerHTML = "Title: " + title + "<br>" + "How Long Worked: " + date + "<br>" + "Description: " + description;
+                        } else {
+                            document.getElementById(location).innerHTML = "";
+                        }
+                    }
+                </script>
+            </section>
+
+            <h2 class="section-title" style="margin-bottom: 10px;">PROGRAMMING LANGUAGES
+            </h2>
+            <section class="programming-lang">
+                <div class="lang-card">
+                    <img src="images/c++.png" />
+                    <h4>C++</h4>
+                </div>
+                <div class="lang-card">
+                    <img src="images/java.png" />
+                    <h4>Java</h4>
+                </div>
+                <div class="lang-card">
+                    <img src="images/python.png" />
+                    <h4>Python</h4>
+                </div>
+                <div class="lang-card">
+                    <img src="images/html.png" />
+                    <h4>HTML</h4>
+                </div>
+                <div class="lang-card">
+                    <img src="images/css.png" />
+                    <h4>CSS</h4>
+                </div>
+                <div class="lang-card">
+                    <img src="images/javascript.png" />
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="lang-card">
+                    <img src="images/c-sharp.png" />
+                    <h4>C#</h4>
+                </div>
+            </section>
+        </span>
+    </main>
+
+</body>
+
+</html>

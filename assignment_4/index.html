@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>World Recipeace Recipe Builder Webpage</title>
+</head>
+<script src="recipe.js" defer></script>
+<script src="writeRecipeToFile.js"></script>
+
+<body>
+    <h1 aria-label="header">World Recipeace Recipe Builder</h1>
+    <section id="recipe-title" style="padding-bottom: 5px;">
+        <input class="addInput" id="recipe-title-input" type="text" placeholder="Enter recipe title"
+            aria-label="Enter recipe title" style="border-radius: 0.5em; margin-left: -3em;">
+    </section>
+    <section id="recipe-ingredients" style="margin-bottom: -15px;">
+        <input class="addInput" id="recipe-ingredients-input" type="text" placeholder="Enter ingredient"
+            aria-label="Press Enter to add ingredient" aria-placeholder="Enter ingredient">
+        <button class="addButton" id="recipe-ingredients-button"
+            aria-label="Press Enter or Space to add ingredient input">Add</button>
+        <ul class="empty" id="recipe-ingredients-list" tabindex="0" type="list" aria-label="List of added ingredients">
+        </ul>
+    </section>
+    <section id="recipe-instructions">
+        <input class="addInput" id="recipe-instructions-input" type="text" placeholder="Enter instruction"
+            aria-label="Press Enter to add instruction">
+        <button class="addButton" id="recipe-instructions-button"
+            aria-label="Press Enter or Space to add ingredient input"> Add</button>
+        <ul class="empty" id="recipe-instructions-list" tabindex="0" type="list"
+            aria-label="List of added instructions">
+    </section>
+    <section id="results">
+        <button id="reset"
+            aria-label="Press Enter or Space to reset all of the fields to begin a new recipe">Reset</button>
+        <button id="save" aria-label="Press Enter or Space to save current recipe card to HTML file">Save Recipe
+            Card</button>
+        <p id="error" style="color: #082d7d;" aria-live="assertive"></p>
+    </section>
+</body>
+
+</html>

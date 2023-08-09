@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "prettymanFont";
+  src: url("Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "prettymanFontItalic";
+  src: url("Italic.ttf") format("truetype");
+  font-weight: italic;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2em;
+  color: rgb(168, 222, 240);
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 13em;
+  margin-top: 5px;
+  padding: 0;
+  border: 0.18em solid rgb(173, 216, 230);
+  border-radius: 1.2em;
+}
+
+.empty {
+  border: none;
+}
+
+/* Individual data tiles */
+.data-ingredient,
+.data-instruction {
+  padding: 0.25em;
+  border-radius: 1em;
+  border: 0.25em solid rgb(173, 216, 230);
+  background-color: rgb(173, 216, 230);
+  color: grey;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+/* Center elements on the page while left aligning them respectively */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+  background-color: rgba(128, 128, 128, 0.805);
+  font-family: "prettymanFont", "Times New Roman", serif;
+  font-weight: bold;
+  /* pick background color for visiually impaired */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fix fonts */
+input::placeholder {
+  font-family: "prettymanFontItalic", "Times New Roman", serif;
+}
+
+button {
+  font-family: "prettymanFont", "Times New Roman", serif;
+}
+
+input {
+  font-family: "prettymanFont", "Times New Roman", serif;
+}
+
+/* Round edges of each input section/button */
+.addInput {
+  border-radius: 0.5em 0 0 0.5em;
+  width: 10em;
+  height: 2em;
+  font-size: 1em;
+  padding: 0.5em;
+  border: 0.1em solid black;
+}
+
+.addButton {
+  border: 0.1em solid black;
+  border-radius: 0 0.5em 0.5em 0;
+  width: 3em;
+  height: 2em;
+  font-size: 1em;
+  margin-left: -0.25em;
+}
+
+/* Fixing the sizing of the reset and save button */
+#reset,
+#save {
+  border-radius: 0.5em;
+  width: auto;
+  height: 2em;
+  font-size: 0.75em;
+  padding: 0.5em;
+  border: 0.1em solid black;
+}

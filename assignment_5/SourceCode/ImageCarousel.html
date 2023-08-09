@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="SourceCSS.css" />
+</head>
+
+<body>
+    <article id="carousel-html">
+    </article>
+
+    <script>
+        document.getElementById("carousel-html").innerText = `
+            <div class="carousel">
+        <div class="carousel-slider" id="carousel-slider">
+            <img class="input-image" src="carousel/input_image (1).jpg" alt="Image 1">
+            <img class="input-image" src="carousel/input_image (2).jpg" alt="Image 2">
+            <img class="input-image" src="carousel/input_image (4).jpg" alt="Image 4">
+            <img class="input-image" src="carousel/input_image (5).jpg" alt="Image 5">
+            <img class="input-image" src="carousel/input_image (6).jpg" alt="Image 6">
+            <img class="input-image" src="carousel/input_image (7).jpg" alt="Image 7">
+            <script>
+                // Set general width and count of images in carousel
+                const carouselSlider = document.getElementById('carousel-slider');
+                const imageWidth = document.getElementsByClassName("input-image")[0].clientWidth;
+                const imageCount = document.getElementsByClassName("input-image").length;
+                carouselSlider.style.setProperty('--image-width', imageWidth + 'px');
+                carouselSlider.style.setProperty('--image-count', imageCount);
+            <'/script>'
+    </div>
+    </div>'
+    `;
+    </script>
+
+    <button class="fab" id="backButton">
+        <span class="material-icons" style="font-size: 2em;" onclick="history.go(-1)">back</span>
+</body>
+
+</html>

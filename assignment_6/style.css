@@ -1,0 +1,84 @@
+body {
+  background-color: pink;
+  box-sizing: border-box;
+  color: rgb(71, 70, 70);
+  min-height: 100vh;
+}
+
+#main-content.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#main-content {
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  transition: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 0.5rem 0;
+  border: none;
+  outline: none;
+  text-indent: 2rem;
+  border-radius: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+#error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.randomQuote {
+  /* add the font family fantasy, followed by cursive */
+  font-family: fantasy, cursive;
+}
+
+.quote {
+  background-color: rgb(39, 227, 217);
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  width: 80%;
+}
+
+.quote.pinned {
+  background-color: rgb(26, 210, 201);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}

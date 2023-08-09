@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="SourceCSS.css" />
+</head>
+
+<body>
+    <article id="navbar-html">
+
+    </article>
+
+    <script>
+        document.getElementById("navbar-html").innerText = `
+    <nav class="navbar">
+        <section class="navbar-title-section">
+            <button class="navbar-menu-button" id="nav-menu-button">
+                <span class="material-icons"></span>
+                <div id="trial"></div>
+            </button>
+            <h2 id="update-title">Your Website Title</h2>
+        </section>
+        <section class="navbar-link-section">
+            <a href="#">Page 1</a>
+            <a href="#">Page 2</a>
+            <a href="#">Page 3</a>
+        </section>
+    </nav>'
+`;
+    </script>
+
+    <button class="fab" id="backButton">
+        <span class="material-icons" style="font-size: 2em;" onclick="history.go(-1)">back</span>
+</body>
+
+</html>

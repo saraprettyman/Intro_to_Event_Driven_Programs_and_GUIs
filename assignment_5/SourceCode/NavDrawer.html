@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="SourceCSS.css" />
+</head>
+
+<body>
+    <article id="nav-drawer-html">
+
+    </article>
+
+    <script>
+        document.getElementById("nav-drawer-html").innerText = `
+    <article class="nav-drawer" id="nav-drawer">
+    <button class="nav-toggle" aria-label="Open Navigation" id="nav-toggle">
+        <span class="material-icons"></span>
+    </button>
+    <ul class="hidden-links" id="hidden-links">
+        <li><a href="SourceCode/NavBar">NavBar</a></li>
+        <li><a href="SourceCode/NavDrawer.html">Navigation Drawer</a></li>
+        <li><a href="SourceCode/Button.html">Button</a></li>
+        <li><a href="SourceCode/FAB.html">Floating Action Button (FAB)</a></li>
+        <li><a href="SourceCode/ImageCarousel.html">Image Carousel</a></li>
+        <li><a href="SourceCode/LoadingSpinners.html">Loading Spinners</a></li>
+    </ul>
+    </article>'
+`;
+
+    </script>
+
+    <button class="fab" id="backButton">
+        <span class="material-icons" style="font-size: 2em;" onclick="history.go(-1)">back</span>
+</body>
+
+</html>
