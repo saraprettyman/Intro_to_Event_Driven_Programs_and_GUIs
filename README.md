@@ -15,3 +15,4 @@ This repository contains all my assignments for the web site development course 
 | Assignment 4 | Accessibility | [Link](./assignment_4/README.md) |
 | Assignment 5 | Motion and Animation | [Link](./assignment_5/README.md) |
 | Assignment 6 | Responsive Design| [Link](./assignment_6/README.md) |
+ 
