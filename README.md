@@ -1,6 +1,6 @@
 # Introduction to Event Driven Programs and GUI's
-This repository contains all my assignments for the web site development course I took in Spring 2023. The assignments range from general concepts of GUI developement, to design of event driven programming, to Web Content Accessibility Guidelines (WCAG) implementation. Each assignment has a README file to explain which programming languages were used, the objective, the task, and the implementation.\
-I am currently developing a website via AWS to display the results of the code. The websites current link is [here](http://mainbucket.prettywoman.s3-website-us-east-1.amazonaws.com/projects.html).
+This repository contains all my assignments for the web site development course I took in Spring 2023. The assignments range from general concepts of GUI developement to design of event driven programming to Web Content Accessibility Guidelines (WCAG) implementation. Each assignment has a README file to explain which programming languages were used, the objective, the task, and the implementation.\
+I am currently developing a website via AWS to display the results of the code. The website's current link is [here](http://mainbucket.prettywoman.s3-website-us-east-1.amazonaws.com/projects.html).
 
 
 | Assignment | Description | Links |
